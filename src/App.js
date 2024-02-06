@@ -32,35 +32,43 @@ export default function App() {
     )
 
     return (
-        <div>
-            <input
-                type='number'
-                value={amount}
-                onChange={(e) => {
-                    setAmount(e.target.value)
-                }}
-            />
-            <select
-                value={currencyFrom}
-                onChange={(e) => {
-                    setCurrencyFrom(e.target.value)
-                }}>
-                <option value='USD'>USD</option>
-                <option value='EUR'>EUR</option>
-                <option value='CAD'>CAD</option>
-                <option value='INR'>INR</option>
-            </select>
-            <select
-                value={currencyTo}
-                onChange={(e) => {
-                    setCurrencyTo(e.target.value)
-                }}>
-                <option value='USD'>USD</option>
-                <option value='EUR'>EUR</option>
-                <option value='CAD'>CAD</option>
-                <option value='INR'>INR</option>
-            </select>
-            <p>{result}</p>
+        <div className='container'>
+            <div className='inputData'>
+                <input
+                    type='number'
+                    value={amount}
+                    onChange={(e) => {
+                        setAmount(e.target.value)
+                    }}
+                />
+                <select
+                    className='curFrom'
+                    value={currencyFrom}
+                    onChange={(e) => {
+                        setCurrencyFrom(e.target.value)
+                    }}>
+                    <option value='USD'>USD</option>
+                    <option value='EUR'>EUR</option>
+                    <option value='CAD'>CAD</option>
+                    <option value='INR'>INR</option>
+                </select>
+                <span className='to'>to</span>
+                <select
+                    className='curTo'
+                    value={currencyTo}
+                    onChange={(e) => {
+                        setCurrencyTo(e.target.value)
+                    }}>
+                    <option value='USD'>USD</option>
+                    <option value='EUR'>EUR</option>
+                    <option value='CAD'>CAD</option>
+                    <option value='INR'>INR</option>
+                </select>
+            </div>
+
+            <p>
+                {result} {currencyTo}
+            </p>
         </div>
     )
 }
