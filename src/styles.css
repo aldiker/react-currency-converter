@@ -1,57 +1,47 @@
-.App {
-    font-family: sans-serif;
-    text-align: center;
+body {
+    background-color: #6e6e6e;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
     width: fit-content;
-    padding: 10px;
-    border: 2px solid rgb(79, 197, 197);
-    background-color: rgb(22, 82, 117);
-    border-style: double;
-    border-radius: 20px;
-    text-align: center;
+    padding: 20px;
+    border: 2px solid #e9e9e9;
+    background-color: #4a4a4a;
+    border-radius: 10px;
+    margin: 1ch auto;
 }
 
 .inputData {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.inputData input,
+.inputData select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    background-color: #666666;
+    color: #e9e9e9;
     font-size: 1rem;
-    margin: 0px 20px 0px 20px;
-    box-sizing: border-box;
 }
 
-.container input {
-    padding: 0;
-    width: 100px;
-    text-align: center;
-    background-color: rgb(18, 141, 150);
-    color: rgb(219, 224, 228);
+.to {
     font-size: 1.2rem;
-    margin-right: 10px;
-    height: 40px;
-}
-.container .curFrom {
-    background-color: rgb(18, 141, 150);
-    color: rgb(219, 224, 228);
-    font-size: 1.2rem;
-    margin-right: 10px;
-    height: 40px;
-}
-.container .curTo {
-    background-color: rgb(18, 141, 150);
-    color: rgb(219, 224, 228);
-    font-size: 1.2rem;
-    height: 40px;
+    margin: 0 10px;
+    color: #e9e9e9;
 }
 
-.container .to {
-    color: rgb(219, 224, 228);
-    font-size: 1.2rem;
-    margin-right: 10px;
-    height: 40px;
-    box-sizing: border-box;
-}
 .container p {
-    color: rgb(219, 224, 228);
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
+    text-align: center;
+    margin: 0;
+    color: #19b9ce;
 }

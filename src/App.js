@@ -50,7 +50,10 @@ export default function App() {
                     <option value='USD'>USD</option>
                     <option value='EUR'>EUR</option>
                     <option value='CAD'>CAD</option>
-                    <option value='INR'>INR</option>
+                    <option value='PLN'>PLN</option>
+                    <option value='CHF'>CHF</option>
+                    <option value='GBP'>GBP</option>
+                    <option value='AUD'>AUD</option>
                 </select>
                 <span className='to'>to</span>
                 <select
@@ -62,7 +65,10 @@ export default function App() {
                     <option value='USD'>USD</option>
                     <option value='EUR'>EUR</option>
                     <option value='CAD'>CAD</option>
-                    <option value='INR'>INR</option>
+                    <option value='PLN'>PLN</option>
+                    <option value='CHF'>CHF</option>
+                    <option value='GBP'>GBP</option>
+                    <option value='AUD'>AUD</option>
                 </select>
             </div>
 
